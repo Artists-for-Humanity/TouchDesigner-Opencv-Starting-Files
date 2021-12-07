@@ -31,6 +31,8 @@ while True:
             print(f"{lm.y} {h} {cy}")
             # client.send_message(f"/landmark-{id}-x", lm.x)
             # client.send_message(f"/landmark-{id}-y", lm.y)
+
+            # Check this out for how to break each specific body part out: https://github.com/Gidrian/Multiple-person-detection-mediapipe/blob/main/Multiple_Human_Pose_Detection_Mediapipe/Human_Detection.py
             client.send_message(f"/landmark-{id}-x", cx)
             client.send_message(f"/landmark-{id}-y", cy)
 
